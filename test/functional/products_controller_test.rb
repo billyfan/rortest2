@@ -47,6 +47,14 @@ class ProductsControllerTest < ActionController::TestCase
     assert_redirected_to product_path(assigns(:product))
   end
 
+  test "can't delete product in cart" do
+    assert_difference('Product.count', 0) do
+      delete :destroy, id: @product
+    end
+
+    assert_redirected_to products_path
+  end
+
   test "should destroy product" do
     assert_difference('Product.count', -1) do
       delete :destroy, id: @product
