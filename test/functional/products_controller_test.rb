@@ -49,7 +49,7 @@ class ProductsControllerTest < ActionController::TestCase
 
   test "can't delete product in cart" do
     assert_difference('Product.count', 0) do
-      delete :destroy, id: @product
+      delete :destroy, :id => products(:ruby).to_param
     end
 
     assert_redirected_to products_path

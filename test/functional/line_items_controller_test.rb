@@ -3,6 +3,7 @@ require 'test_helper'
 class LineItemsControllerTest < ActionController::TestCase
   setup do
     @line_item = line_items(:one)
+    @line_item2 = line_items(:two)
   end
 
   test "should get index" do
