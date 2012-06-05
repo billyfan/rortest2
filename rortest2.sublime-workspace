@@ -192,6 +192,9 @@
 	},
 	"file_history":
 	[
+		"/D/xampp/htdocs/rortest2/.gitignore",
+		"/D/xampp/htdocs/rortest2/Gemfile.lock",
+		"/D/xampp/htdocs/hktest/Gemfile.lock",
 		"/D/xampp/htdocs/rortest2/app/assets/javascripts/orders.js.coffee",
 		"/D/xampp/htdocs/rortest2/app/views/carts/_cart.html.erb",
 		"/D/xampp/htdocs/rortest2/app/views/line_items/_line_item.html.erb",
@@ -345,8 +348,8 @@
 						"selection":
 						[
 							[
-								156,
-								156
+								268,
+								268
 							]
 						],
 						"settings":
@@ -551,7 +554,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -605,7 +610,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -625,8 +632,8 @@
 						"selection":
 						[
 							[
-								470,
-								470
+								85,
+								102
 							]
 						],
 						"settings":
@@ -695,11 +702,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/D/xampp/htdocs/tmgit/temeer/ror/tmror.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
