@@ -10,8 +10,15 @@
 <!-- END:head -->
 <body class="<%= controller.controller_name %>">
   <div id="banner">
+    <%= form_tag store_path, class: 'locale' do %>
+      <%= select_tag 'set_locale', 
+        options_for_select(LANGUAGES, I18n.locale.to_s),
+        onchange: 'this.form.submit()' %>
+      <%= submit_tag 'submit' %>
+      <%= javascript_tag "$('.locale input').hide()" %>
+    <% end %>
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns">
     <div id="side">
@@ -26,13 +33,26 @@
 
 <!-- END_HIGHLIGHT -->
       <ul>
-        <li><a href="http://www....">Home</a></li>
-        <li><a href="http://www..../faq">Questions</a></li>
-        <li><a href="http://www..../news">News</a></li>
-        <li><a href="http://www..../contact">Contact</a></li>
+        <li><%= link_to t('.home'), store_path %></li>
+        <li><%= link_to t('.question'), store_path %></li>
+        <li><%= link_to t('.news'), store_path %></li>
+        <li><%= link_to t('.contact'), store_path %></li>
+      </ul>
+      <ul>
+      <% if user_signed_in? %> <!-- Provided by devise -->
+        <li><%= current_user.email %></li>
+        <li><%= link_to 'User Detail', edit_user_registration_path %></li>
+        <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+        <li><%= link_to 'sina weibo', '/auth/tsina' %></li>
+      <% else %>
+        <li><%= link_to 'Register', new_user_registration_path %></li>
+        <li><%= link_to 'Login', new_user_session_path %></li>
+      <% end %>
       </ul>
     </div>
     <div id="main">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </div>

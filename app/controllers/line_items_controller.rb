@@ -94,7 +94,7 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to store_url, notice: 'Line item was successfully updated.' }
-        format.js {@current_item = @line_item}
+        format.js { @current_item = @line_item }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

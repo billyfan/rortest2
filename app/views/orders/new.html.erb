@@ -1,5 +1,10 @@
-<h1>New order</h1>
+<div class="depot_form">
+  <fieldset>
+<!-- START_HIGHLIGHT -->
+    <legend><%= t('.legend') %></legend>
+<!-- END_HIGHLIGHT -->
+    <%= render 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', orders_path %>
+    <%= link_to 'Back', orders_path %>
+  </fieldset>
+</div>

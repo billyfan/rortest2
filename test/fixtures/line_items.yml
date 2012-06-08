@@ -4,8 +4,10 @@ one:
   product: ruby
   cart: one
   quantity: 2
+  order: one
 
 two:
-  product: one
+  product: two
   cart: one
   quantity: 2
+  order: one

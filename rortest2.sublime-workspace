@@ -103,47 +103,39 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 1040,
+				"buffer_size": 1638,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test/functional/orders_controller_test.rb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 1318,
+				"buffer_size": 857,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/order.rb",
+			"file": "config/application.rb",
 			"settings":
 			{
-				"buffer_size": 488,
+				"buffer_size": 2890,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/orders/index.html.erb",
+			"file": "db/migrate/20120605182711_devise_create_users.rb",
 			"settings":
 			{
-				"buffer_size": 644,
+				"buffer_size": 1482,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/products/who_bought.html.erb",
+			"file": "config/environments/development.rb",
 			"settings":
 			{
-				"buffer_size": 695,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/carts/_cart.html.erb",
-			"settings":
-			{
-				"buffer_size": 470,
+				"buffer_size": 1446,
 				"line_ending": "Unix"
 			}
 		}
@@ -192,11 +184,16 @@
 	},
 	"file_history":
 	[
+		"/D/xampp/htdocs/rortest2/config/application.rb",
+		"/D/xampp/htdocs/rortest2/test/functional/orders_controller_test.rb",
+		"/D/xampp/htdocs/rortest2/app/models/order.rb",
+		"/D/xampp/htdocs/rortest2/app/views/orders/index.html.erb",
+		"/D/xampp/htdocs/rortest2/app/views/products/who_bought.html.erb",
+		"/D/xampp/htdocs/rortest2/app/views/carts/_cart.html.erb",
 		"/D/xampp/htdocs/rortest2/.gitignore",
 		"/D/xampp/htdocs/rortest2/Gemfile.lock",
 		"/D/xampp/htdocs/hktest/Gemfile.lock",
 		"/D/xampp/htdocs/rortest2/app/assets/javascripts/orders.js.coffee",
-		"/D/xampp/htdocs/rortest2/app/views/carts/_cart.html.erb",
 		"/D/xampp/htdocs/rortest2/app/views/line_items/_line_item.html.erb",
 		"/D/xampp/htdocs/rortest2/Gemfile",
 		"/D/xampp/htdocs/rortest2/script/load_orders.rb",
@@ -210,7 +207,6 @@
 		"/D/xampp/htdocs/rortest2/app/models/line_item.rb",
 		"/D/xampp/htdocs/rortest2/test/fixtures/orders.yml",
 		"/D/xampp/htdocs/rortest2/test/fixtures/line_items.yml",
-		"/D/xampp/htdocs/rortest2/app/models/order.rb",
 		"/D/xampp/htdocs/rortest2/test/functional/carts_controller_test.rb",
 		"/D/xampp/htdocs/rortest2/test/functional/line_items_controller_test.rb",
 		"/D/xampp/htdocs/rortest2/app/models/cart.rb",
@@ -305,7 +301,6 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -451,7 +446,7 @@
 			]
 		},
 		{
-			"selected": 6,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -485,15 +480,15 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 1040,
+						"buffer_size": 1638,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								678,
+								678
 							]
 						],
 						"settings":
@@ -503,32 +498,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "test/functional/orders_controller_test.rb",
+					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 1318,
+						"buffer_size": 857,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								432,
-								432
+								539,
+								539
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -538,24 +531,24 @@
 				},
 				{
 					"buffer": 8,
-					"file": "app/models/order.rb",
+					"file": "config/application.rb",
 					"settings":
 					{
-						"buffer_size": 488,
+						"buffer_size": 2890,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								488,
-								488
+								165,
+								165
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -566,23 +559,23 @@
 				},
 				{
 					"buffer": 9,
-					"file": "app/views/orders/index.html.erb",
+					"file": "db/migrate/20120605182711_devise_create_users.rb",
 					"settings":
 					{
-						"buffer_size": 644,
+						"buffer_size": 1482,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								644,
-								644
+								425,
+								425
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -594,51 +587,25 @@
 				},
 				{
 					"buffer": 10,
-					"file": "app/views/products/who_bought.html.erb",
+					"file": "config/environments/development.rb",
 					"settings":
 					{
-						"buffer_size": 695,
+						"buffer_size": 1446,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								695,
-								695
+								793,
+								793
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/views/carts/_cart.html.erb",
-					"settings":
-					{
-						"buffer_size": 470,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								102
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

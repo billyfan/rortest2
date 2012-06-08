@@ -1,6 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+#require 'oa-oauth'
+#    config.middleware.use OmniAuth::Strategies::Tsina, 'APP_KEY', 'APP_SECRET'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -52,6 +54,9 @@ module Rortest2
 
     # Enable the asset pipeline
     config.assets.enabled = true
+
+    # requested by devise
+    config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

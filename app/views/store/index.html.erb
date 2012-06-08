@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Your Pragmatic Catalog</h1>
+<h1><%= t('.title_html') %></h1>
 <% if @visit_count > 0 %>
 <p>oh yeah this page has been visited <%= pluralize @visit_count, 'time' %> in this session </p>
 <% end %>
@@ -12,8 +12,8 @@
     <h3><%= product.title %></h3>
     <%= sanitize(product.description) %>
     <div class="price_line">
-      <span class="price"><%= number_to_currency product.price, :locale => :de %></span>
-      <%= button_to 'Add to Cart', line_items_path(:product_id => product), remote: true %>
+      <span class="price"><%= number_to_currency product.price %></span>
+      <%= button_to t('.add_html'), line_items_path(:product_id => product), remote: true %>
     </div>
   </div>
 <% end %>

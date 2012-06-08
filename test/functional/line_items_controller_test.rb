@@ -53,13 +53,18 @@ class LineItemsControllerTest < ActionController::TestCase
   end
 
   test "should decrease line_item quantity via ajax" do
-    assert_difference('@line_item.quantity', -1) do
-      xhr :put, :decrease, id: @line_item
-    end 
-    
+    assert_equal @line_item.quantity, 2
+    #assert_difference('@line_item.quantity', 0) do
+    session[:cart_id] = @line_item.cart_id
+    xhr :put, :decrease, id: @line_item
+    #end 
+    assert_equal assigns(:line_item).quantity, 1
+
+    #assert_redirected_to line_items_path
     assert_response :success
     assert_select_jquery :html, '#cart' do
       assert_select 'tr#current_item td', /Programming Ruby 1.9/
+      assert_select 'tr#current_item td', /1&times;/
     end
   end
 
